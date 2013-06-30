@@ -30,11 +30,11 @@ public class arduino_facebook {
 					numLikes = newLikes;
 					bit = '1';
 					serialPort.writeByte((byte) bit);
-					System.out.println("the number of LIKES of cocacola page(https://www.facebook.com/cocacola) " + numLikes + "->" + newLikes + " : Increase");
+					System.out.println("the number of LIKES of cocacola page (https://www.facebook.com/cocacola) " + numLikes + "->" + newLikes + " : Increase");
 				} else {
 					bit = '0';
 					serialPort.writeByte((byte) bit);
-					System.out.println("the number of LIKES of cocacola page(https://www.facebook.com/cocacola) " + numLikes + "->" + newLikes + " : ");
+					System.out.println("the number of LIKES of cocacola page (https://www.facebook.com/cocacola) " + numLikes + "->" + newLikes + " : ");
 				}
 				
 				Thread.sleep(500);
